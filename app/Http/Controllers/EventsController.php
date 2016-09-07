@@ -262,7 +262,7 @@ class EventsController extends Controller
                     //view('emails.lista_eventos')->with('events', $todayEvents);
                    Mail::send("emails.lista_eventos", array('events' => $todayEvents, 'user' => $user), function($message)use ($user){
                        $message->to($user->email, $user->name)
-                                ->bcc('hp_tanya@hotmail.com','abraham.vazquez@tectijuana.edu.mx')
+                                ->bcc('abraham.vazquez@tectijuana.edu.mx')
                                 ->subject('Eventos del dia de hoy');
                     // echo "entra aqui ";
                             });

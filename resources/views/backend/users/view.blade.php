@@ -47,7 +47,7 @@
 				@if(Auth::user()->id == $user->id)
 				<div class ="form-group">
 					<div class="col-lg-10 col-lg-offset-2">
-						<a href="{{ action('UsersController@edit', ['id' => $user->id]) }}" class="btn btn-default">Editar Perfil</a>
+						<a href="{{ action('UsersController@edit', ['id' => $user->id]) }}" class="btn btn-info" >Editar Perfil</a>
 					</div>
 				</div>
 				@endif

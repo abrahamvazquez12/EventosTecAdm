@@ -15,4 +15,5 @@
 		</div>
 	</div>
 	@endforeach
-</div>
+	<div style="display:table-cell;width:50%;">
+	
